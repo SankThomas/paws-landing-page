@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom"
 
 // Components
+import Header from "./components/Header"
 import Showcase from "./components/Showcase"
 import Services from "./components/Services"
 import Testimonials from "./components/Testimonials"
@@ -15,6 +16,7 @@ import Error from "./pages/Error"
 const App = () => {
   return (
     <BrowserRouter>
+      <Header />
       <Switch>
         <Route path="/" exact>
           <Showcase />
